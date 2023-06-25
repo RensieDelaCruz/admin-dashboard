@@ -14,13 +14,35 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
-    gap: 5px;
+    gap: 2px;
 }
 
+/* HEADER LAYOUT */
 .header {
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
+.searchbar {
+    grid-column: 1 / 3;
+}
+
+.info {
+    grid-column: 3 / 4;
+}
+
+.welcome {
+    grid-row: 2 / 4;
+    grid-column: 1 / 3;
+}
+
+.buttons {
+    grid-row: 2 / 4;
+}
+
+/* SIDEBAR LAYOUT */
 .sidebar {
     grid-row: 1 / 3;
     background-color: rgba(128, 0, 0, 0.85);
@@ -45,6 +67,7 @@ li {
     padding: 20px 10px;
 }
 
+/* MAIN CONTENT LAYOUT */
 .main-content {
     grid-column: 2 / 3;
     background-color: rgb(255, 255, 150, 0.65);
