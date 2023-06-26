@@ -1,5 +1,5 @@
 * {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: 0;
     padding: 0;
 }
@@ -43,6 +43,32 @@ li {
 
 .searchbar {
     grid-column: 1 / 3;
+    padding: 10px 5rem;
+}
+
+.searchbar img {
+    position: relative;
+    height: 2rem;
+    top: 7px;
+    right: 10px;
+}
+
+input[type="search"] {
+    font-size: 1.3rem;
+    background-color: rgb(255, 255, 150, 0.65);
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.header button{
+    background-color: rgba(128, 0, 0, 0.85);
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0 1em;
+    margin-left: 1rem;
 }
 
 .info {
@@ -94,7 +120,7 @@ li {
     right: 10px;
 }
 
-#main-icon{
+#main-icon {
     position: relative;
     top: 12px;
     right: 10px;
@@ -110,11 +136,11 @@ li {
     padding: .5em;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-button:active{
+button:active {
     font-weight: bolder;
 }
 
