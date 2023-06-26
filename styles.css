@@ -1,12 +1,28 @@
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+        url('fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 html,
 body {
     height: 100%;
+}
+
+body,
+input,
+button,
+ul,
+li {
+    font-family: 'robotoregular', Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -48,13 +64,16 @@ body {
     background-color: rgba(128, 0, 0, 0.85);
     color: white;
     display: grid;
-    grid-template-rows: 1fr 2.5fr 2.5fr;
+    grid-template-rows: 1fr 4fr 4fr;
     gap: 50px;
     text-align: center;
+    justify-content: start;
 }
 
 .sidebar div {
-    padding: 4rem;
+    padding: 1rem 4rem;
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
 .sidebar ul {
@@ -64,7 +83,39 @@ body {
 }
 
 li {
-    padding: 20px 10px;
+    padding: .5rem 3rem;
+    text-align: start;
+}
+
+.sidebar img {
+    position: relative;
+    height: 1.5rem;
+    top: 5px;
+    right: 10px;
+}
+
+#main-icon{
+    position: relative;
+    top: 12px;
+    right: 10px;
+    height: 3rem;
+    width: 3rem;
+}
+
+.sidebar button {
+    background-color: rgba(128, 0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    padding: .5em;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    font-weight: bolder;
 }
 
 /* MAIN CONTENT LAYOUT */
