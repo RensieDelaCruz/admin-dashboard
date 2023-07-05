@@ -1,5 +1,5 @@
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
 }
@@ -61,7 +61,7 @@ input[type="search"] {
     border-radius: 10px;
 }
 
-.header button{
+.header button {
     background-color: rgba(128, 0, 0, 0.85);
     color: white;
     border: 2px solid black;
@@ -73,6 +73,34 @@ input[type="search"] {
 
 .info {
     grid-column: 3 / 4;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.info div {
+   display: flex;
+   padding: 5px;
+   font-weight: bold;
+}
+
+.info #icon {
+    height: 2rem;
+}
+
+.info button{
+    background-color: white;
+    border: 0;
+    margin: 0;
+    padding: 5px;
+}
+.info #pic {
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid black;
+    border-radius: 50%;
 }
 
 .welcome {
