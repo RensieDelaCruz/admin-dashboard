@@ -29,7 +29,7 @@ li {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 12.75rem 1fr;
     gap: 2px;
 }
 
@@ -81,22 +81,23 @@ input[type="search"] {
 }
 
 .info div {
-   display: flex;
-   padding: 5px;
-   font-weight: bold;
+    display: flex;
+    padding: 5px;
+    font-weight: bold;
 }
 
 .info #icon {
     height: 2rem;
 }
 
-.info button{
+.info #notif-btn {
     background-color: white;
     border: 0;
     margin: 0;
     padding: 5px;
 }
-.info #pic {
+
+.info #info-pic {
     height: 4rem;
     width: 4rem;
     border: 1px solid black;
@@ -106,6 +107,30 @@ input[type="search"] {
 .welcome {
     grid-row: 2 / 4;
     grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+    gap: 5px;
+}
+
+.welcome #welcome-pic {
+    grid-row: 1 / 3;
+    justify-self: end;
+    height: 6rem;
+    width: 6rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.welcome .greet {
+    grid-column: 2 / 3;
+    font-weight: bold;
+}
+
+.welcome .name {
+    grid-column: 2 / 3;
+    font-weight: bolder;
+    font-size: 3.5rem;
 }
 
 .buttons {
