@@ -1,5 +1,4 @@
 * {
-    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
 }
@@ -260,14 +259,43 @@ button:active {
     align-self: flex-end;
 }
 
-.project-item p {
+.main-content p {
     color: rgb(98, 98, 98);
 }
 
 .announcement-container {
     display: grid;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1.5rem 1rem;
+    gap: 15px;
 }
 
 .trending-container {
     display: grid;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1.5rem 1rem;
+    gap: 15px;
+}
+
+.trendings h2 {
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+
+.trending-item{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trending-item img{
+    height: 3rem;
+    width: 3.5rem;
+    grid-row: 1 / 3;
+    border: 1px solid black;
+    border-radius: 50%;
 }
