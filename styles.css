@@ -30,7 +30,6 @@ li {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 12.75rem 1fr;
-    gap: 2px;
 }
 
 /* HEADER LAYOUT */
@@ -39,6 +38,7 @@ li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    box-shadow: 3px 10px 3px 0px #000000;
 }
 
 .header button {
@@ -216,6 +216,12 @@ button:active {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    padding: 1.5rem 1rem 0 1rem;
+}
+
+.main-content h2 {
+    padding-bottom: 1rem;
 }
 
 .projects {
@@ -226,6 +232,36 @@ button:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+}
+
+.project-item {
+    padding: 1rem;
+    border: 2px solid black;
+    border-left: 15px solid rgba(128, 0, 0, 0.85);
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-item img {
+    height: 1.5rem;
+}
+
+.project-item button {
+    background-color: white;
+    border: none;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.project-item .icons {
+    align-self: flex-end;
+}
+
+.project-item p {
+    color: rgb(98, 98, 98);
 }
 
 .announcement-container {
